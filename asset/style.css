@@ -8,18 +8,6 @@ body {
  background-color: rgb(225, 255, 245);
  }
 
- img {
-        border-style: dotted;
- }
-
-
-
-img.css-guide {
-      
-        width: 400px;
-        border: #25a900;
-      }
-        
 
 
 main {
@@ -38,7 +26,10 @@ main {
     border-radius: 25px;
     margin:10px;
 
+    
 }
+
+
 
 #b { 
     float: left; 
@@ -129,7 +120,7 @@ p.wrap{
   }
 
 
-a:hover{
+a:hover {
 
         background-color: rgb(237, 91, 0);
         color: white;
@@ -142,15 +133,19 @@ a:hover{
          font-weight: bold;
          font-size: 14px;
  }
-#hover {
-        font-size: 11pt;
-        font-family:Roboto;
-        font-weight: bold;
-        color: rgb(207, 0, 107);
-}
+
 
 .crosshair {
          cursor: crosshair;
          font-size: larger;
 }
 
+.css-image {
+        background-image: url('learn-css.jpg');
+        height: 150px;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+
+      }
+      
