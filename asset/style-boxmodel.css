@@ -1,0 +1,133 @@
+
+body {
+margin: 10px 20px 0 20px;
+
+}
+
+h1 {
+font-size: large;
+text-align: center;
+color: rgb(0, 0, 0);
+text-decoration: underline;
+
+}
+
+#header {
+    border: 1px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family:'Bookman Old Style', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+        #top-nav {
+            margin: 10px;
+            font-family:'Times New Roman', Times, serif;
+            text-align: center;
+            font-weight: bold;
+            
+        }
+
+        #top-nav li {
+       
+            width:120px;
+            display: inline;
+            margin-left:2px;
+          
+        
+        
+        }
+
+        #top-nav a {
+            display: inline;
+            padding:4px 50px 4px 50px;
+            text-decoration:none;
+            color:#009;
+         
+
+        }
+
+        #top-nav a:hover {
+            background-color: rgb(255, 143, 45);
+            padding:4px 50px 4px 50px;
+            color: rgb(255, 255, 255);
+       
+        }
+
+
+
+#aleft {
+    width: 24%;
+    height: auto;
+    float: left;
+    margin-left: 0px;
+
+
+}
+
+#aright {
+    width: 20%;
+    height: auto;
+    float: left;
+    font-weight: bold;
+   
+   
+}
+
+.left-img {
+    width:150px;
+    height: auto;
+    margin-top: -15px;
+    padding-left: -10px;
+   
+}
+
+.right-img {
+    width:200px;
+    height: auto;
+    margin-top: -15px;
+
+}
+
+#center-paragraph, .p {
+    width: 50%;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    float: left;
+    border-style: solid;
+    border-top: 0px;
+    border-bottom: 0px;
+    margin-bottom: 10px;
+    border-width: 1px ;
+    border-color: rgb(161, 161, 161);
+    
+
+    
+ 
+}
+article {
+    color: rgb(0, 0, 0);
+    padding: 15px 15px 15px 15px ;
+   
+    
+}
+
+p {
+   
+        color: rgb(0, 0, 0);
+        padding: 15px;
+       
+        
+    }
+
+footer  {
+    font-style: italic;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 15px;
+  
+}
+
+hr {
+    width: 90%;
+}
