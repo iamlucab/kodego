@@ -78,9 +78,7 @@ a {
     width: 60%;
     
 }
-
-
-
+ 
 div .promo {
     background-color: red;
     color:white;
@@ -90,8 +88,6 @@ div .promo {
     bottom:0px;
 
 }
-
-
 
 div .alert {
     position:inherit;
