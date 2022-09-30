@@ -28,11 +28,12 @@ align-items: center;
 }
 
 .create-post-btn {
-    background-color: rgb(182, 33, 83);
-    padding: 6px, 20px;
+    background-color: rgb(219, 14, 82);
+    padding: 5px 18px ;
     color: white;
     border-radius: 5px;
     font-size: 1.2rem;
+    margin: 2px;
 
 }
 
@@ -71,6 +72,7 @@ header {
  .header-content {
     text-align: center;
     padding: 10px;
+ 
 
  }
 
@@ -82,5 +84,10 @@ header {
     font-weight:bold;
     text-decoration: none;
     border-radius: 5px;
+
+}
+
+.header-content p {
+    font-size:  1.2rem;;
 
 }
