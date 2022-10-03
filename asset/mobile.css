@@ -8,7 +8,7 @@ body {
  header {
     display: flex;
     min-height: 80vh;
-    background-image: url(https://www.goalcast.com/wp-content/uploads/2021/06/Sunset-quotes.jpg);
+    background-color: #ffbe0b;
     justify-content: center;
     align-items: center;
     background-size: cover;
