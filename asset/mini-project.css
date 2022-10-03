@@ -65,6 +65,8 @@ float: left;
   }
   
   main {
+    display: flex;
+    flex-direction:column;
     border:1px solid rgb(145, 145, 145);
     height:auto;
     padding:5px;
@@ -73,29 +75,26 @@ float: left;
   }
 
    section {
-
-    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction:column;
     width: 100%;
 
    }
 
-
-   .container-flex {
-    flex-direction: row;
-   }
- 
-   @media only screen and (min-width: 600px) {
-    body {
-  
+    section img {
+    width: 300px;
+    float: right;
+    padding: 5px;
+    
     }
-  
 
    .intro {
     display: flex;
     flex-direction:column;
-    width: 70%;
-
-    padding: 10px;
+    justify-content:flex-start;
+    width: 100%;
+    padding: 5px;
+    
 ;
    }
 
@@ -105,15 +104,25 @@ float: left;
     width: 200px;
     padding: 5px 20px;
     border-radius: 20px;
+    overflow: auto;
    }
 
    .right-side {
-    display: flex;
-    flex-direction:row;
-    width: 30%;   
- 
+    background-color: orange;
+    justify-content: space-around;
+    width: 100%;    
     padding: 10px;
-   }
+
+
+      
+    }
+
+    .right-side-img {
+        width: 150px;
+        padding: 5px;
+     
+     
+    }
 
 
 section {
@@ -122,46 +131,60 @@ section {
     margin: 0, auto;
     max-width: 1900px;
 }
-
+    section img {
+        width: 300px;
+        float: left;
+        margin: 10px;
+    }
  
 
 article {
-    width: 100%;
-    display: flex;
     flex-direction:row;
     justify-content: flex-start;
 
 }
 
-.courses {
+.photoshop {
     display: flex;
-    flex-direction:row;
-   
+    flex-direction: column;
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+  
 }
 
-        article .column-one {
-           padding: 10px;
+.author {
+    
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-size: 1rem;
+    color:rgb(114, 114, 114);
+    margin-top: -15px 0px 3px 5px ;
+    }
+ 
+ article ul li {
+    display: inline;
+    margin-left: 0px;
+ }
+    .checked  {
+        display: inline;
+        color : yellow;
+        font-size : 20px;
+    }
+    .unchecked {
+        font-size : 20px;
+    }
 
-        }
-        article .column-two {
 
-            padding: 10px;
-        }
+article img {
+    width: 100%;
+    
+}
 
-        article .column-three {
 
-             padding: 10px;
-        }
 
-            article .column-four {
 
-             padding: 10px;
-        }
 
-             article .column-five {
-
-            padding: 10px;
-        }
 
 footer {
     display: flex;
