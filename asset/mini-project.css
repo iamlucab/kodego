@@ -70,33 +70,51 @@ float: left;
     border:1px solid rgb(145, 145, 145);
     height:auto;
     padding:5px;
-    margin :10px 0px 10px 0px;
+    margin :10px;
     
   }
 
-   section {
+  p {
+    color: #333;
+
+  }
+
+     /* ------------- this will be applied for the desktop -- */ 
+     @media only screen and (min-width: 768px) {
+     
+  section {
     display: flex;
-    flex-direction:column;
-    width: 100%;
+    flex-direction:row;
+    margin: 0, auto;
+    max-width: 100%;
+    
+}
 
-   }
 
-    section img {
-    width: 300px;
-    float: right;
+section img {
+    width: 400px;
+    float: left;
     padding: 5px;
+    margin: 5px;
+    justify-content: flex-start;
     
     }
 
+    
    .intro {
     display: flex;
     flex-direction:column;
     justify-content:flex-start;
-    width: 100%;
+    width: 70%;
     padding: 5px;
     
 ;
    }
+
+     section h1 {
+        font-size: x-large;
+        color:orange
+    }
 
    section button {
     background-color: gold;
@@ -106,16 +124,14 @@ float: left;
     border-radius: 20px;
     overflow: auto;
    }
+    
 
    .right-side {
     background-color: orange;
     justify-content: space-around;
-    width: 50%;    
+    width: 30%;    
     padding: 10px;
    
-
-
-      
     }
 
     .right-side-img {
@@ -125,34 +141,144 @@ float: left;
      
     }
 
-
-section {
-    display: flex;
-    flex-direction: row;
-    margin: 0, auto;
-    max-width: 1900px;
-}
-    section img {
-        width: 300px;
-        float: left;
-        margin: 10px;
+   article h3 {
+        font-size: medium;
+        color: rgb(0, 116, 17);
     }
- 
 
-article {
+    
+    article {
+        margin: 10px 0px 10px 0px;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+       
+    }
+
+    article h1 {
+        color: rgb(18, 144, 18);
+        font-size: 1.5rem;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    summary {
+        display:inline-block;        
+        background-color: rgb(170, 249, 233);
+              
+    }
+
+    article ul li {
+        display: inline;
+        margin-left: 0px;
+     }
+    
+
+     footer {
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+     
+    }
+     .footer-bottom {
+        
+        background-color: rgb(96, 54, 4);
+        padding:10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        color: white;
+        text-align: center;
+     }
+
+    summary {
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(198, 251, 249);
+        text-align:left;
+        height: 150px;
+        padding: 10px;
+    }
+    
+    summary h2 {
+        color: rgb(114, 77, 14);
+        font-size: 14px;
+        margin-left: 60px;
+        
+ 
+    }
+
+
+    summary a {
+
+        justify-content:left;
+        color: rgb(36, 36, 36);
+        padding: 01.5rem;
+        text-decoration: none;
+        }
+    
+    summary a:hover {
+           color: rgb(12, 60, 27);
+           font-weight: bold;
+    
+    }
+    
+    
+    summary ul, li {
+    
+    list-style: none;    
+    
+         
+    }
+
+     }
+
+@media only screen and (max-width: 600px) {
+
+    .right-side  {
+    background-color: orange;
+    justify-content: space-around;
+    width: 100%;    
+    padding: 10px;
+   
+}
+
+
+
+    section button {
+    background-color: gold;
+    color: rgb(138, 0, 0);
+    width: 200px;
+    padding: 5px 20px;
+    border-radius: 20px;
+    overflow: auto;
+   }
+    
+   section h1 {
+    font-size: x-large;
+    color:orange
+}
+   
+   .right-side-img {
+    width: 250px;
+    padding: 10px;
+
+}
+
+    section img {
+    width: 300px;
+    float: left;
+    padding: 5px;
+    
+    }
+
+
+
+    article {
     flex-direction:row;
     justify-content: flex-start;
 
 }
 
-.photoshop {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    max-width: 100%;
-    height: auto;
-  
-}
+
 
 .author {
     
@@ -163,6 +289,13 @@ article {
     margin-top: -15px 0px 3px 5px ;
     }
  
+    article h1 {
+        color: rgb(18, 144, 18);
+        font-size: 1.5rem;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+
  article ul li {
     display: inline;
     margin-left: 0px;
@@ -181,69 +314,59 @@ article img {
     width: 100%;
     
 }
+}
 
+     
+/* -- from here will be applied for the mobile ----*/
 
+@media only screen and (max-width: 600px) {
+    .right-side  {
+    }
 footer {
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
+     justify-content: center;
     background-color: aquamarine;
      
 }
 
-
-
-.footer-one {
-    width: 25%;
-    padding: 10px 10px 10px 50px ;
-    text-align: left;
- 
-    
-}
-.footer-two {
-    width: 25%;
-    padding: 10px;
-    text-align: left;
-  
-    
-}
-
-.footer-three {
-    width: 25%;
-    padding: 10px;
-     text-align: left;
-   
-    
-}   
-.footer-four {
-    width: 25%;
-    padding: 10px;
-    text-align: left;
-  
-    
-}
+article ul li {
+    display: inline;
+    margin-left: 0px;
+ }
 
 .footer-bottom {
-        width: 100%;
+        display: flex;
+        display: flex;
         color: white;
         font-family: Roboto;
         font-size: 12px;
         text-align: center;
+        justify-content: center;
         background-color: rgb(96, 54, 4);
         padding:10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
     
 }
 
 h2 {
 
-    font-family:'Poppins, 'Times New Roman', Times, serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1.2em;
     color: rgb(30, 180, 30); 
     text-align: center;
-
 }
  
+article h3 {
+    font-size: 1.0rem;    
+    color: rgb(28, 126, 6);
+}
+
+summary {
+    text-align: center;
+    background-color: rgb(185, 255, 255);
+}
 summary a {
+
     justify-content:left;
     color: rgb(36, 36, 36);
     padding: 01.5rem;
@@ -264,4 +387,7 @@ list-style: none;
 
 
 }
-   }
+
+
+}
+
