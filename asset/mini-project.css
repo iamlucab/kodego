@@ -11,31 +11,52 @@ body {
     
 }
 
+
 /* Mobile First Approach */
+  
+
+
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+
+/* @media (min-width:1281px) { hi-res laptops and desktops */  
+
+
+@media (min-width:350px)  { /* smartphones, iPhone, portrait 480x320 phones */ 
 
 header {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    min-height: 40vh;
-    background-color: gold;
+    justify-content: center;
+    min-height: 30vh;
+    background-image: url(./img/banner.jpg);
     background-size: cover;
-
-}
-
-header img {
-    margin-top: 20px;
-    width: 200px;
-    border-radius: 50%;
     
 }
 
-header h1 {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-   
+.subtitle {
+    color: white;
+    size: 12px;
+
+
+
 }
+ .logo {
+    align-self: center;
+    margin-top: 10px;
+    width: 150px;
+    border-radius: 50%;
+
+    }
+    
+.logo-name {
+    width: 250px;
+    height: 30px;
+    align-self:center;
+}
+
+
 
 header h2 {
     text-align: center;
@@ -64,6 +85,9 @@ float: left;
     color: black;
   }
   
+
+
+
   main {
     display: flex;
     flex-direction:column;
@@ -79,37 +103,41 @@ float: left;
 
   }
 
-     /* ------------- this will be applied for the desktop -- */ 
-     @media only screen and (min-width: 768px) {
-     
+
+  
   section {
     display: flex;
-    flex-direction:row;
-    margin: 0, auto;
+    flex-direction:column;
+    margin-top: 10px;
     max-width: 100%;
     
 }
 
 
+.course-title {
+    color:rgb(219, 148, 8);
+    font-size: 1.0rem;
+
+}
+
+.author {
+    color: rgb(135, 135, 135);
+    font-size: 0.8rem;
+    }
+
 section img {
     width: 400px;
-    float: left;
+    float: center;
     padding: 5px;
     margin: 5px;
     justify-content: flex-start;
     
     }
-
     
    .intro {
-    display: flex;
-    flex-direction:column;
-    justify-content:flex-start;
-    width: 70%;
-    padding: 5px;
-
+    width: 100%;
+    padding: 8px;
     
-;
    }
 
      section h1 {
@@ -117,18 +145,100 @@ section img {
         color:orange
     }
 
-   section button {
-    background-color: gold;
-    color: rgb(138, 0, 0);
-    width: 200px;
-    padding: 5px 20px;
-    border-radius: 20px;
-    overflow: auto;
-   }
+ 
+    aside {
+        background-color: #ecfbec;
+        padding: 10px;
+    }
     
 
    .right-side {
-    background-color: orange;
+    background-color: rgb(224, 255, 210);
+    justify-content: space-around;
+    width: 100%;    
+    padding: 10px;
+   
+    }
+
+    .right-side-img {
+        width: 150px;
+        padding: 5px;
+        float: left;
+     
+     
+    }
+
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+       padding:20px;
+        }
+
+     
+    
+     footer h2 {
+        font-size: 1.2em;
+        color: #607f60;
+        
+     }
+
+      footer a {
+    
+        justify-content:left;
+        color: rgb(36, 36, 36);
+        padding: 0.5rem;
+        text-decoration: none;
+        }
+    
+    footer a:hover {
+           color: rgb(12, 60, 27);
+           font-weight: bold;
+    
+    }
+    
+    footer ul, li {
+    
+    list-style: none;    
+
+
+    }
+
+    .footer-bottom {
+      
+        color: rgb(98, 98, 98);
+        font-family: Roboto;
+        font-size: 0.8rem;
+        text-align: center;
+        background-color: rgb(233, 230, 230);
+        padding:10px;
+
+
+}   
+
+
+
+
+ @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
+
+    section {
+        display: flex;
+        flex-direction:row;
+        margin-top: 10px;
+        max-width: 100%;
+        
+    }
+    
+
+    aside {
+        background-color: #ecfbec;
+        padding: 10px;
+    }
+    
+
+   .right-side {
+    background-color: rgb(224, 255, 210);
     justify-content: space-around;
     width: 30%;    
     padding: 10px;
@@ -138,9 +248,150 @@ section img {
     .right-side-img {
         width: 150px;
         padding: 5px;
+        float: left;
      
      
     }
+
+
+    #courses   {  
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-items: center;
+    
+    padding:5px; 
+    
+}
+    #courses img {
+    border: 1px;
+    
+        
+    }
+
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+   
+    }
+
+ 
+
+ footer h2 {
+    font-size: 1.2em;
+    color: #607f60;
+    
+ }
+
+  footer a {
+
+    justify-content:left;
+    color: rgb(36, 36, 36);
+    padding: 0.5rem;
+    text-decoration: none;
+    }
+
+footer a:hover {
+       color: rgb(12, 60, 27);
+       font-weight: bold;
+
+}
+
+footer ul, li {
+
+list-style: none;    
+
+
+}
+
+.footer-bottom {
+  
+    color: rgb(98, 98, 98);
+    font-family: Roboto;
+    font-size: 0.8rem;
+    text-align: center;
+    background-color: rgb(233, 230, 230);
+    padding:10px;
+
+}
+
+.logo {
+        align-self: left;
+        margin-top: 10px;
+        width: 150px;
+        border-radius: 50%;       
+}   
+
+.logo-name {
+    width: 450px;
+    height: 50px;
+
+    
+}
+
+
+
+
+ }
+
+ #courses p {
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+   }
+
+
+   #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 3px;
+    right: 10px;
+    z-index: 40;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    background-color: rgb(255, 187, 0);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: rgb(242, 8, 0);
+  }
+ 
+
+  #course img {
+    border-radius: 5px;
+  }
+  
+  #courses img a {
+   
+    justify-content:left;
+    color: rgb(36, 36, 36);
+    padding: 0.5rem;
+    text-decoration: none;
+   
+}
+
+#courses a:hover img {
+       border: rgb(255, 187, 0);
+       border-style: solid;
+       border-radius: 5px;
+       
+
+}
+
+
+
+/*
+
+
 
    article h3 {
         font-size: medium;
@@ -174,13 +425,8 @@ section img {
      }
     
 
-     footer {
-        display: flex;
-        flex-direction:row;
-        justify-content: center;
-        width: 100%;
      
-    }
+    
      .footer-bottom {
        
         background-color: rgb(255, 255, 255);
@@ -200,8 +446,9 @@ section img {
     
     summary h2 {
         color: rgb(114, 77, 14);
-        font-size: 14px;
-        margin-left: 60px;
+        font-size: 16px;
+       text-align: left;
+       
         
  
     }
@@ -231,7 +478,7 @@ section img {
 
      }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
 
     .right-side  {
     background-color: orange;
@@ -269,9 +516,6 @@ section img {
     padding: 5px;
     
     }
-
-
-
     article {
     flex-direction:row;
     justify-content: flex-start;
@@ -280,21 +524,11 @@ section img {
 
 
 
-.author {
-    
-    font-family: 'Times New Roman', Times, serif;
-    font-style: normal;
-    font-size: 1rem;
-    color:rgb(114, 114, 114);
-    margin-top: -15px 0px 3px 5px ;
-    }
- 
     article h1 {
         color: rgb(18, 144, 18);
         font-size: 1.5rem;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
-
 
  article ul li {
     display: inline;
@@ -319,12 +553,12 @@ article img {
      
 /* -- from here will be applied for the mobile ----*/
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 450px) {
     .right-side  {
     }
 footer {
      justify-content: center;
-    background-color: aquamarine;
+    background-color: rgb(0, 187, 125);
      
 }
 
@@ -333,18 +567,8 @@ article ul li {
     margin-left: 0px;
  }
 
-.footer-bottom {
-        display: flex;
-        display: flex;
-        color: rgb(98, 98, 98);
-        font-family: Roboto;
-        font-size: 12px;
-        text-align: center;
-        justify-content: center;
-        background-color: rgb(255, 255, 255);
-        padding:10px;
-    
-    
+
+  
 }
 
 h2 {
@@ -362,7 +586,7 @@ article h3 {
 
 summary {
     text-align: center;
-    background-color: rgb(185, 255, 255);
+    
 }
 summary a {
 
@@ -378,15 +602,56 @@ summary a:hover {
 
 }
 
-
 summary ul, li {
 
 list-style: none;    
 
-
-
 }
 
 
 }
 
+@media screen and (max-width: 880px) {
+  .wrapper {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+
+
+/* Stars rating -- */
+
+/* .ratings{
+    margin-right:10px;
+}
+
+.ratings i{
+    
+    color:#cecece;
+    font-size:32px;
+}
+
+.rating-color{
+    color:#fbc634 !important;
+}
+
+.review-count{
+    font-weight:400;
+    margin-bottom:2px;
+    font-size:24px !important;
+}
+
+.small-ratings i{
+  color:#cecece;   
+}
+
+.review-stat{
+    font-weight:80;
+    font-size:15px;
+    margin-bottom:2px;
+} */
