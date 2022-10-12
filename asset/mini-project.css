@@ -29,8 +29,8 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 30vh;
-    background-image: url(./img/banner.jpg);
+    min-height: 40vh;
+    /* background-image: url(./img/banner-mo.jpg); */
     background-size: cover;
     
 }
@@ -220,7 +220,18 @@ section img {
 
 
 
- @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
+ @media (min-width:670px) { /* big landscape tablets, laptops, and desktops */ 
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 40vh;
+        /* background-image: url(./img/banner.jpg); */
+        background-size: cover;
+        
+    }
+
 
     section {
         display: flex;
@@ -240,7 +251,7 @@ section img {
    .right-side {
     background-color: rgb(224, 255, 210);
     justify-content: space-around;
-    width: 30%;    
+    width: 35%;    
     padding: 10px;
    
     }
