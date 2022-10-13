@@ -22,7 +22,7 @@ header {
     flex-direction: column;
     justify-content: center;
     min-height: 40vh;
-    background-image: url(./img/banner-mo.jpg); 
+    /* background-image: url(./img/banner-mo.jpg);  */
     background-size: cover;
     height: auto;
 
@@ -221,7 +221,7 @@ section img {
         flex-direction: column;
         justify-content: center;
         min-height: 40vh;
-        background-image: url(./img/banner.jpg);
+        /* background-image: url(./img/banner-mo-to.jpg); */
         background-size: cover;
         width: 100%;
         height: auto;
