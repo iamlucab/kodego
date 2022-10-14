@@ -166,6 +166,7 @@ section img {
     footer {
         display: flex;
         flex-direction: column;
+        background-color: rgb(201, 254, 236);
         width: 100%;
        padding:20px;
         }
@@ -282,6 +283,7 @@ footer {
     display: flex;
     flex-direction: row;
     width: 100%;
+    background-color: rgb(201, 254, 236);
 
    
     }
@@ -394,5 +396,23 @@ list-style: none;
 
 }
 
+}
 
 
+
+.class-price {
+    font-size: 0.5rem;
+    color: #ddd;
+    
+
+}
+
+.pre {
+    color: brown;
+   font-size: 0.4rem;
+
+}
+.price-body {
+    color: rgb(76, 73, 73);
+    size: 0.8rem;
+}
