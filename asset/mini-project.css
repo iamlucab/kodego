@@ -439,12 +439,12 @@ list-style: none;
 
 .pre {
     color: brown;
-   font-size: 0.8rem;
+   font-size: 1.0rem;
 
 }
 .price-body {
     color: rgb(76, 73, 73);
-    size: 0.8rem;
+    size: 1.2rem;
 }
 
 .class-map
