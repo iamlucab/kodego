@@ -15,19 +15,19 @@ body {
 /* Mobile First Approach */
   
 
-@media (min-width:350px)  { /* smartphones, iPhone, portrait 480x320 phones */ 
+@media (min-width:300px)  { /* smartphones, iPhone, portrait 480x320 phones */ 
 
 header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 40vh;
-    /* background-image: url(./img/banner-mo.jpg);  */
-    background-size: cover;
-    height: auto;
+display: flex;
+flex-direction: column;
+width: 100%;
+height: 30vh;
 
-    
 }
+    header img {
+            width:300px;
+            margin-top:130px;
+   }
 
 .subtitle {
     color: white;
@@ -51,6 +51,13 @@ header {
 }
 
 
+.header-logo-right {
+
+    padding-left: 20px;
+   font-family: roboto;
+    font-size: 14px;
+    
+} 
 
 header h2 {
     text-align: center;
@@ -102,7 +109,7 @@ float: left;
   section {
     display: flex;
     flex-direction:column;
-    margin-top: 10px;
+    margin-top: 5px;
     max-width: 100%;
     
 }
@@ -213,37 +220,50 @@ section img {
 }   
 
 
+}
+
 
 
  @media (min-width:600px) { /* big landscape tablets, laptops, and desktops */ 
 
-}
-
     header {
         display: flex;
         flex-direction: row;
-        min-height: 10vh;
-      
-
-            
+           
     }
 
+    section {
+        display: flex;
+        flex-direction:row;
+        margin-top: 10px;
+        max-width: 100%;
+        
+    }
+
+    
+    .intro {
+
+        width: 70%;
+        padding: 8px;
+        
+       }
+
+
     .header-logo {
-        width: 250px;
+        width: 400px;
         height: auto;
-        margin-top: 80px;
+        margin-top: 70px;
 
     }   
 
     .header-logo-right {
-        
-        height: auto;
-        margin-top:100px;
+        padding-top:100px;
         margin-left:10px;
-        padding-top: 15px;
-        justify-content: right;
-        font-family: roboto;
+       font-family: roboto;
         font-size: 14px;
+        
+       
+      
     }   
 
 
@@ -253,25 +273,13 @@ section img {
         font-family: Roboto;
     
     }
-    section {
-        display: flex;
-        flex-direction:row;
-        margin-top: 10px;
-        max-width: 100%;
-        
-    }
-    
 
-    aside {
-        background-color: #ecfbec;
-        padding: 10px;
-    }
-    
+
 
    .right-side {
     background-color: rgb(224, 255, 210);
     justify-content: space-around;
-    width: 35%;    
+    width: 30%;    
     padding: 10px;
    
     }
@@ -423,7 +431,7 @@ list-style: none;
 
 
 .class-price {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
     color: #ddd;
     
 
@@ -431,10 +439,17 @@ list-style: none;
 
 .pre {
     color: brown;
-   font-size: 0.4rem;
+   font-size: 0.8rem;
 
 }
 .price-body {
     color: rgb(76, 73, 73);
     size: 0.8rem;
+}
+
+.class-map
+    {
+     width:100%;
+     float: left;
+     padding:20px;   
 }
