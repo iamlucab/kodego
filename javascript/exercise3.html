@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3 - While Loop</title>
+</head>
+<body>
+
+        <h1> Attendance Sheet </h1>
+        <p>
+            <span> Enter the number of participants:
+                <input type="text" id="num-participants">
+                <p>
+                    <button onclick="generateAttendanceForm()">Generate</button>
+                </p>
+
+                <div id="form-container"></p>
+            <script>
+              
+                        let pContainer = document.querySelector('#form-container');
+                       function generateAttendanceForm() {
+                            let totalParticipants = parseInt(document.querySelector('#num-participants').value); 
+                            let counter = 0;
+                            let strTags = '';
+                            while(counter < totalParticipants) {
+                              counter++;
+                              strTags +='</p>';
+                              strTags +='<label> Enter Attendee'   + counter + '</label>';
+                              strTags += '<input type="text" placeholder ="Name of Attendee" + counter ' + counter +'" />';
+                              strTags +='</p>';
+                            }
+   
+                            strTags += '<p><input type="Submit" value ="Submit"></p> ';
+                             pContainer.innerHTML = strTags;   
+                         }
+                    </script>
+
+    
+
+</body>
+    
+
+</html>
