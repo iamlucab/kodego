@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="./asset/style.css">
  
@@ -33,26 +32,34 @@
 
   </ul>
           <!-- This is the first Tab  -->
-            <div class="left">
+          
+   
+          
+           
                     <div class="tab-content">
+                      
                       <div id="home" class="tab-pane fade in active">
                         <div class="bd-highlight">
                         <p id="grocery-list"></p>
                             
-                        <script>
+                      <script>
                         var groceries = ['Soy Sauce', 'Biscuit', 'Bread', 'Egg', 'Canned Goods', 'Milk', 'Eggs','Tuna','Soap', 'Alcohol', 'Juice', 
-                        'Beer', 'Rice', 'Flour', 'Cooking Oil', 'Lotion', 'Toothpaste' , 'Cotton' ,'Meat','Cream and Butter'];
+                        'Beer', 'Rice', 'Flour', 'Cooking Oil', 'Lotion', 'Toothpaste' , 'Cotton' ,'Meat','Cream and Butter']; -->
                         var list = "";
                         for (let x = 0;  x < groceries.length; x++ ) {
-                        list += groceries[x]  +  "<ul>" + "</ul>";
-                                          }
-                      document.getElementById("grocery-list").innerHTML = list;
-                        </script>
-                 
+                      list += groceries[x]  +  "<ul>" + "</ul>";
+                                         }
+                       document.getElementById("grocery-list").innerHTML = list;
+                                        
+                       </script> 
+                      
+         
+
                       </div>
 
                       
                       </div>
+
                       <!-- end of the first tab-->
        
 
@@ -63,27 +70,27 @@
                               <button id="push">Add to List</button>
                           </div>
                           <div id="tasks"></div>
-                          ( not yet finish)
-                      
-                      </div>
+                        
+                          </ul>
+                        </div>
                   </p>
-                  <!-- <script>
+               <script>
+                      let initial = ['Mani', 'Kini'];
                       document.querySelector('#push').onclick = function(){
                       if(document.querySelector('#newtask input').value.length == 0){
                           alert("Please enter to do list name")
                       }
 
                       else{
+                            
                         
-                          document.querySelector('#tasks').innerHTML += `
-                              <div class="task">
-                                  <span id="taskname">
-                                      ${document.querySelector('#newtask input').value}
-                                  </span>
+                          document.querySelector('#tasks').innerHTML += `<div class="task"><span id="taskname">${document.querySelector('#newtask input','list',).value }</span>
                                   <button class="delete">
                                      x  
                                   </button>
+                                  
                               </div> `;
+                           document   
 
                           var current_tasks = document.querySelectorAll(".delete");
                           for(var i=0; i<current_tasks.length; i++){
@@ -93,7 +100,7 @@
                           }
                       }
                   }
-                  </script> -->
+                  </script> 
            </div>
 <!-- end of the second tab-->
    
@@ -160,11 +167,9 @@
       return celsius;
    }
 
-   // Checks if Calsius or Fahrenheit is selected
+
    var tempSelected = document.getElementById("temp_diff");
    var valueTemp = tempSelected.options[tempSelected.selectedIndex].value;
-
-   // Checks the value inside the Temperature input
    var numberTemp = document.getElementById("temp").value;
 
    var result;
@@ -172,6 +177,7 @@
    if (valueTemp == 1) {
       result = celToFah(numberTemp);
       document.getElementById("resultContainer").innerHTML = "Equivalent to " + result + "°Fahrenheit";
+
    } else {
       result = fahToCel(numberTemp);
       document.getElementById("resultContainer").innerHTML = "Equivalent to "  + result +   "°Celsius";
@@ -189,13 +195,13 @@
         
         <p>
             <label>Feet</label>
-            <input id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+            <input id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverter(this.value)" onchange="Length Converter(this.value)">
           </p>
           <p><strong>Meters: <font color="red"><span id="outputMeters"></font></strong></span></p>
           
           <script>
           function LengthConverter(valNum) {
-            document.getElementById("outputMeters").innerHTML=valNum /3.2808;
+            document.getElementById("outputMeters").innerHTML=valNum /3.2808 ;
           
           }
           </script>
@@ -205,28 +211,57 @@
       
       <div id="menu5" class="tab-pane fade">
         <h3>Day Greetings</h3>
-       (not yet finish.......)
-         
-        <p>Hello guest, <div id="greeting"> </div><p id="oras"></p>
+          
+    <input type="text" id="WeekDay" placeholder=" Enter day of the Week">
+    <button id=checkdate onclick="checkDate()">Check Day</button>
+    <br><p id="output"></p>
 
         <script>
+          function checkDate() {
+          let araw = document.getElementById('WeekDay').value;
+          let msg = document.getElementById("output");
+          let  mgaAraw =['Sunday', 'Monday', 'Tuesday','Wednesday','Thursaday','Friday','Saturday'];  
+  
+          switch(araw) {
+              case mgaAraw[0] :
+              msg.textContent = 'Have a blessed Sunday';
+              break;
+  
+              case mgaAraw[1] :
+              msg.textContent =`Let's Start our week with Monday`; 
+              break;
+  
+              case mgaAraw[2] :
+              msg.textContent =`Tuesday is the work mode day`; 
+              break;
+  
+              case mgaAraw[3] :
+              msg.textContent =`Wednesday is MidWeek Prayer for the soul`; 
+              break;
+  
+              case mgaAraw[4] :
+              msg.textContent =`Thursday is for the Boss`; 
+              break;
+  
+               
+              case mgaAraw[5] :
+              msg.textContent =`Its good Friday for friends night`; 
+              break;
+              
+              case mgaAraw[6] :
+              msg.textContent =`It's Saturday Night Family outing!`; 
+              break;
+              
+              
+              default:           
+              msg.textContent = 'This is the default Day!';
+          }
+  
+          }    
+          
+      </script>
 
-            const greeting = document.getElementById("greeting");
-            const hour = new Date().getHours();
-            const welcomeTypes = ["Good morning", "Good afternoon", "Good evening"];
-            let welcomeText = "";
-            
-            if (hour < 12) welcomeText = welcomeTypes[0];
-            else if (hour < 18) welcomeText = welcomeTypes[1];
-            else welcomeText = welcomeTypes[2];
-             
-            let oras = hour - 12; 
-            greeting.innerHTML = welcomeText;
-            document.getElementById("oras").innerHTML= oras;
-
-            
-                    </script>
-            
+        </script>      
       </div>
       
 
