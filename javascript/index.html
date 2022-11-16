@@ -172,7 +172,7 @@ document.getElementById("grolist").innerHTML = x  ;
 
 <script>
 function calculateTemp() {
-    function celToFah(celsius) {
+  function celToFah(celsius) {
       var fahrenheit = Math.round((celsius * (9/5)) + 32);
       return fahrenheit;
    }
@@ -222,7 +222,7 @@ function calculateTemp() {
             <label>Feet</label>
             <input id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverter(this.value)" onchange="Length Converter(this.value)">
           </p>
-          <p><strong>Meters: <span id="outputMeters"><strong></span></p>
+          <p><strong>Meters: <font color="red"><span id="outputMeters"></font></strong></span></p>
           
           <script>
           function LengthConverter(valNum) {
