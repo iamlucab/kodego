@@ -41,25 +41,24 @@
                       <div id="home" class="tab-pane fade in active">
                         <div class="bd-highlight">
                         <p id="grocery-list"></p>
-                            
-                      <script>
-                        var groceries = ['Soy Sauce', 'Biscuit', 'Bread', 'Egg', 'Canned Goods', 'Milk', 'Eggs','Tuna','Soap', 'Alcohol', 'Juice', 
-                        'Beer', 'Rice', 'Flour', 'Cooking Oil', 'Lotion', 'Toothpaste' , 'Cotton' ,'Meat','Cream and Butter']; -->
-                        var list = "";
-                        for (let x = 0;  x < groceries.length; x++ ) {
-                      list += groceries[x]  +  "<ul>" + "</ul>";
-                                         }
-                       document.getElementById("grocery-list").innerHTML = list;
-                                        
-                       </script> 
-                      
-         
+                        <p id="demo"></p>    
+                       <script> 
+                 const  items = ['Soy Sauce', 'Biscuit', 'Bread', 'Egg', 'Canned Goods', 'Milk', 'Eggs','Tuna','Soap', 'Alcohol', 'Juice', 
+                        'Beer', 'Rice', 'Flour', 'Cooking Oil', 'Lotion', 'Toothpaste' , 'Cotton' ,'Meat','Cream and Butter']; 
+                    
+                          let x = "";
+                          for (let i = 0; i < items.length; i++) {
+                            x += items[i] + "<ul></ul>";
+                          }
+
+                          document.getElementById("demo").innerHTML = x ;
+                          </script>
+
+                        <!-- </script> -->
 
                       </div>
-
-                      
                       </div>
-
+                     
                       <!-- end of the first tab-->
        
 
@@ -156,34 +155,44 @@
          </form>
 
 <script>
-    function calculateTemp() {
-    function celToFah(celsius) {
-      var fahrenheit = Math.round((celsius * (9/5)) + 32);
-      return fahrenheit;
-   }
+//     function calculateTemp() {
+//     function celToFah(celsius) {
+//       var fahrenheit = Math.round((celsius * (9/5)) + 32);
+//       return fahrenheit;
+//    }
 
-   function fahToCel(fahrenheit) {
-      var celsius = Math.round((fahrenheit - 32) * (5/9));
-      return celsius;
-   }
+//    function fahToCel(fahrenheit) {
+//       var celsius = Math.round((fahrenheit - 32) * (5/9));
+//       return celsius;
+//    }
 
 
-   var tempSelected = document.getElementById("temp_diff");
-   var valueTemp = tempSelected.options[tempSelected.selectedIndex].value;
-   var numberTemp = document.getElementById("temp").value;
+//    var tempSelected = document.getElementById("temp_diff");
+//    var valueTemp = tempSelected.options[tempSelected.selectedIndex].value;
+//    var numberTemp = document.getElementById("temp").value;
 
-   var result;
+//    var result;
    
-   if (valueTemp == 1) {
-      result = celToFah(numberTemp);
-      document.getElementById("resultContainer").innerHTML = "Equivalent to " + result + "°Fahrenheit";
+//    if (valueTemp == 1) {
+//       result = celToFah(numberTemp);
+//       document.getElementById("resultContainer").innerHTML = "Equivalent to " + result + "°Fahrenheit";
 
-   } else {
-      result = fahToCel(numberTemp);
-      document.getElementById("resultContainer").innerHTML = "Equivalent to "  + result +   "°Celsius";
-   }
+//    } else {
+//       result = fahToCel(numberTemp);
+//       document.getElementById("resultContainer").innerHTML = "Equivalent to "  + result +   "°Celsius";
+//    }
    
-}
+// }
+
+
+    class Converter {
+      convertToFahrenheit (degCel) {
+
+      }
+
+    }
+
+
 </script>
 
 
