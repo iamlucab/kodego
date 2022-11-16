@@ -34,29 +34,45 @@
           <!-- This is the first Tab  -->
           
    
-          
+     <section>    
            
                     <div class="tab-content">
-                      
-                      <div id="home" class="tab-pane fade in active">
-                        <div class="bd-highlight">
-                        <p id="grocery-list"></p>
-                        <p id="demo"></p>    
+                     <div id="home" class="tab-pane fade in active flex-container">
+                        
+                      <div class="flex-container"><div class="column">
+                        <font class="solution-result">{ Result }</h2></strong></font>
+                        
+                          <p id="grolist"></p>    
                        <script> 
-                 const  items = ['Soy Sauce', 'Biscuit', 'Bread', 'Egg', 'Canned Goods', 'Milk', 'Eggs','Tuna','Soap', 'Alcohol', 'Juice', 
-                        'Beer', 'Rice', 'Flour', 'Cooking Oil', 'Lotion', 'Toothpaste' , 'Cotton' ,'Meat','Cream and Butter']; 
-                    
-                          let x = "";
-                          for (let i = 0; i < items.length; i++) {
-                            x += items[i] + "<ul></ul>";
-                          }
+                        const  items = ['Soy Sauce', 'Biscuit', 'Bread', 'Egg', 'Canned Goods', 'Milk', 'Eggs','Tuna','Soap', 'Alcohol', 'Juice', 
+                               'Beer', 'Rice', 'Flour', 'Cooking Oil', 'Lotion', 'Toothpaste' , 'Cotton' ,'Meat','Cream and Butter']; 
+                           
+                                 let x = "";
+                                 for (let i = 0; i < items.length; i++)  {
+                                   x += items[i] + "<br>"; /* ill use <br> instead of <ul>*/
+                                 }
+       
+                                 document.getElementById("grolist").innerHTML = x  ; 
+                                 </script>
+                          </div>
+                        <div class="column bg-alt"><strong><h2><font class="solution-title">{ Solution } </h2></strong></font> 
 
-                          document.getElementById("demo").innerHTML = x ;
-                          </script>
+                  <font class="solution-body">
+                    <pre> 
+ const  items = ['Soy Sauce', 'Biscuit', 'Bread', 'Egg', 'Canned Goods', 'Milk', 'Eggs','Tuna','Soap', 'Alcohol', 'Juice', 'Beer', 'Rice', 'Flour', 'Cooking Oil', 'Lotion', 'Toothpaste' , 'Cotton' ,'Meat','Cream and Butter']; 
+                        <p></p> 
+ let x = "";
+for (let i = 0; i < items.length; i++)  { x += items[i] + ; 
+}
+document.getElementById("grolist").innerHTML = x  ; 
+                            </font></pre>
 
-                        <!-- </script> -->
+                       
+                        </div>
+                    </div>
 
-                      </div>
+
+
                       </div>
                      
                       <!-- end of the first tab-->
@@ -155,34 +171,34 @@
          </form>
 
 <script>
-//     function calculateTemp() {
-//     function celToFah(celsius) {
-//       var fahrenheit = Math.round((celsius * (9/5)) + 32);
-//       return fahrenheit;
-//    }
+function calculateTemp() {
+    function celToFah(celsius) {
+      var fahrenheit = Math.round((celsius * (9/5)) + 32);
+      return fahrenheit;
+   }
 
-//    function fahToCel(fahrenheit) {
-//       var celsius = Math.round((fahrenheit - 32) * (5/9));
-//       return celsius;
-//    }
+   function fahToCel(fahrenheit) {
+      var celsius = Math.round((fahrenheit - 32) * (5/9));
+      return celsius;
+   }
 
 
-//    var tempSelected = document.getElementById("temp_diff");
-//    var valueTemp = tempSelected.options[tempSelected.selectedIndex].value;
-//    var numberTemp = document.getElementById("temp").value;
+   var tempSelected = document.getElementById("temp_diff");
+   var valueTemp = tempSelected.options[tempSelected.selectedIndex].value;
+   var numberTemp = document.getElementById("temp").value;
 
-//    var result;
+   var result;
    
-//    if (valueTemp == 1) {
-//       result = celToFah(numberTemp);
-//       document.getElementById("resultContainer").innerHTML = "Equivalent to " + result + "°Fahrenheit";
+   if (valueTemp == 1) {
+      result = celToFah(numberTemp);
+      document.getElementById("resultContainer").innerHTML = "Equivalent to " + result + "°Fahrenheit";
 
-//    } else {
-//       result = fahToCel(numberTemp);
-//       document.getElementById("resultContainer").innerHTML = "Equivalent to "  + result +   "°Celsius";
-//    }
+   } else {
+      result = fahToCel(numberTemp);
+      document.getElementById("resultContainer").innerHTML = "Equivalent to "  + result +   "°Celsius";
+   }
    
-// }
+}
 
 
     class Converter {
@@ -206,7 +222,7 @@
             <label>Feet</label>
             <input id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverter(this.value)" onchange="Length Converter(this.value)">
           </p>
-          <p><strong>Meters: <font color="red"><span id="outputMeters"></font></strong></span></p>
+          <p><strong>Meters: <span id="outputMeters"><strong></span></p>
           
           <script>
           function LengthConverter(valNum) {
@@ -277,7 +293,7 @@
   </div>
 </div>
 
-
+</section> 
 </main>
 
 <footer>

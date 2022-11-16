@@ -1,8 +1,58 @@
 
 main {
     width: 100%;
+    position: relative;
   
 }
+
+section {
+    flex-direction: column;
+    display: flex;
+    padding: 20px;
+    background-color: antiquewhite;
+}
+
+.flex-container{
+	width: 100%;
+	min-height: 300px;
+	margin: 0 auto;
+	display: -webkit-flex; /* Safari */		
+	display: flex; /* Standard syntax */
+}
+.flex-container .column{
+	padding: 10px;
+    width: 50%;
+	background: #ffffff;
+	-webkit-flex: 1; /* Safari */
+	-ms-flex: 1; /* IE 10 */
+	flex: 1; /* Standard syntax */
+}
+.flex-container .column.bg-alt{
+
+}
+
+.solution-body {
+    color: rgb(0, 0, 0);
+    size: 10vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.font-solution {
+    color: white;
+    font-style: Courier;
+    font-size: x-small;
+}
+
+.solution-title {
+    color: rgb(255, 191, 0);
+    font-size:large;
+}
+.solution-result {
+    color: rgb(30, 113, 255);
+    font-size:large;
+}
+
 
 header {
     width: 100%;
@@ -12,18 +62,18 @@ header {
 
 .left {
     display: flex;
-    flex-direction: row;
-    width: 100%;
+    flex-direction: column;
+    width: 50%;
     padding: 20px;
-    background-color: antiquewhite;
+    background-color: rgb(255, 250, 211);
 
 
 }
 
 .right {
-    display: block;
-    float: right;
+    display:inline-block;
     width: 50%;
+    float:right;
     background-color: aqua;
 
 }
